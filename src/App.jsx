@@ -35,11 +35,6 @@ const App = () => {
   const classes = useStyles();
   return (
     <div className={classes.wrapper}>
-      <AppBar className={classes.appBar}>
-        <Typography variant="h2" align="center">
-          Video Chat
-        </Typography>
-      </AppBar>
       <VideoPlayer />
       <Option>
         <Notifications />
