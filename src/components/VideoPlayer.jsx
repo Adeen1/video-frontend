@@ -35,7 +35,13 @@ const VideoPlayer = () => {
             <Typography variant="h5" gutterBottom>
               {name || "Name"}
             </Typography>
-            <video muted className={classes.video} ref={myVideo} />
+            <video
+              muted
+              className={classes.video}
+              ref={myVideo}
+              autoPlay
+              playsInlin
+            />
           </Grid>
         </Paper>
       )}
@@ -46,7 +52,12 @@ const VideoPlayer = () => {
             <Typography variant="h5" gutterBottom>
               {call.name || "Name"}
             </Typography>
-            <video className={classes.video} ref={userVideo} />
+            <video
+              className={classes.video}
+              ref={userVideo}
+              playsInlin
+              autoPlay
+            />
           </Grid>
         </Paper>
       )}
